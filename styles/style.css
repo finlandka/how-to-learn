@@ -251,6 +251,8 @@ h1, h2, h3, h4, p, body {
 
 .section-title_theme_dark, .section-subtitle_theme_dark {
   color: #fff;
+  z-index: 2;
+  position: relative;
 }
 
 .table__theme_dark {
