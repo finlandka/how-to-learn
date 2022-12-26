@@ -42,11 +42,6 @@
   background-image: url('../images/logo_place_header.svg');
 }
 
-.flex-column {
-  display: flex;
-  flex-direction: column;
-}
-
 .header__title {
   font-size: 102px;
   font-weight: 600;
@@ -124,7 +119,7 @@
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
   padding: 0;
 }
 
@@ -194,6 +189,7 @@
   font-size: 18px;
   font-weight: normal;
   margin-top: 20px;
+  margin-bottom: 0;
   padding: 0;
 }
 
@@ -255,6 +251,7 @@
   width: 877px;
   height: 877px;
   background-image: url('../images/kaufman-triangle.svg');
+  background-size: cover;
 }
 
 .section-title_theme_dark {
