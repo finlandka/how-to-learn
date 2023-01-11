@@ -6,8 +6,8 @@
   <link rel="stylesheet" href="pages/index.css">
   <title>Научиться учиться</title>
 </head>
-<body>
-  <div class="page">
+
+  <body class="page">
     <header class="header">
       <div class="logo logo_place_header"></div>
       <h1 class="header__title">Научиться учиться</h1>
@@ -39,7 +39,7 @@
       <section class="techniques">
         <h2 class="section-title">Техники обучения</h2>
         <p class="section-subtitle">Пять практик от Барбары Оакли</p>
-        <ul class="cards">
+        <ul class="cards list">
           <li class="cards__item">
             <img src="images/cards-attention.png" class="cards__image" alt="Два вида внимания">
             <h3 class="cards__title">Два вида внимания</h3>
@@ -70,15 +70,19 @@
       <section class="video">
         <h2 class="section-title">Видео на TED</h2>
         <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
-        <div class="video__iframes">
-          <iframe class="video__iframe" src="https://www.youtube.com/embed/arj7oStGLkU" title="Тим Урбан: В сознании мастера-прокрастинатора"
+        <ul class="video__iframes list">
+          <li>
+            <iframe class="video__iframe" src="https://www.youtube.com/embed/arj7oStGLkU" title="Тим Урбан: В сознании мастера-прокрастинатора"
           allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          <iframe class="video__iframe" src="https://www.youtube.com/embed/5MgBikgcWnY" title="Джош Кауфман: Первые 20 часов - как научиться чему-либо"
+          </li>
+          <li>
+            <iframe class="video__iframe" src="https://www.youtube.com/embed/5MgBikgcWnY" title="Джош Кауфман: Первые 20 часов - как научиться чему-либо"
           allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
+          </li>
+        </ul>
       </section>
-      <article class="oakley">
-        <div class="two-columns">
+      <section class="oakley">
+        <article class="two-columns">
           <h2 class="two-columns__brief">История Барбары Оакли.</h2>
           <div class="two-columns__main-text">
             <p class="two-columns__paragraph">С детства Барбаре не давалась математика. Она считала себя законченным гуманитарием, причем далеко не
@@ -87,8 +91,8 @@
               ваши добытые трудом знания гораздо глубже, чем у тех, кому все ясно с первого взгляда.
             </p>
           </div>
-        </div>
-      </article>
+        </article>
+      </section>
       <section class="feynman">
         <h2 class="feynman__title">Метод Фейнмана</h2>
         <p class="feynman__subtitle">Выучить и не забыть</p>
@@ -97,7 +101,7 @@
       <section class="digits">
         <h2 class="section-title">Цифры и факты</h2>
         <p class="section-subtitle">Про учебу и мозг</p>
-        <ul class="table">
+        <ul class="table list">
           <li class="table__cell">
             <h3 class="table__heading">86 миллиардов</h3>
             <p class="table__text">Число нейронов в мозге человека</p>
@@ -142,7 +146,7 @@
             нужно прочитать всем, кто занимается образованием — так учащиеся повсюду смогут получить навыки и знания, которые приносят успех в школе,
             карьере и жизни.
           </blockquote>
-          <p class="khan__quote-author">Джордж Лукас</p>
+          <h3 class="khan__quote-author">Джордж Лукас</h3>
           <p class="khan__quote-author-subline">Кинорежиссер, продюссер</p>
           <div class="khan__book-container">
               <img src="images/khan-book.jpg" class="khan__book-pic" alt="Весь мир — школа">
@@ -154,7 +158,7 @@
         <div class="kaufman__triangle rotation"></div>
         <h2 class="section-title section-title_theme_dark">Принципы обучения</h2>
         <p class="section-subtitle section-subtitle_theme_dark">от Джоша Кауфмана</p>
-        <ul class="table table_theme_dark">
+        <ul class="table table_theme_dark list">
           <li class="table__cell table__cell_theme_dark">
             <h3 class="table__heading table__heading_theme_dark">1</h3>
             <p class="table__text table__text_theme_dark">Выберите привлекательный проект.</p>
@@ -200,20 +204,28 @@
       <section class="resources">
         <h2 class="section-title">Полезные ресурсы</h2>
         <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
-        <div class="resources__logo-zone">
-          <a href="#" class="resources__link" title="Арзамас">
-            <img src="images/logo/resources-arzamas.svg" class="resources__logo" alt="Арзамас">
-          </a>
-          <a href="#" class="resources__link" title="Н плюс 1">
-            <img src="images/logo/resources-n1.svg" class="resources__logo" alt="Н плюс 1">
-          </a>
-          <a href="#" class="resources__link" title="Стрелка">
-            <img src="images/logo/resources-strelka.svg" class="resources__logo" alt="Стрелка">
-          </a>
-          <a href="#" class="resources__link" title="Полка">
-            <img src="images/logo/resources-polka.svg" class="resources__logo" alt="Полка">
-          </a>
-        </div>
+        <ul class="resources__logo-zone list">
+          <li>
+            <a href="#" class="resources__link" title="Арзамас">
+              <img src="images/logo/resources-arzamas.svg" class="resources__logo" alt="Арзамас">
+            </a>
+          </li>
+          <li>
+            <a href="#" class="resources__link" title="Н плюс 1">
+              <img src="images/logo/resources-n1.svg" class="resources__logo" alt="Н плюс 1">
+            </a>
+          </li>
+          <li>
+            <a href="#" class="resources__link" title="Стрелка">
+              <img src="images/logo/resources-strelka.svg" class="resources__logo" alt="Стрелка">
+            </a>
+          </li>
+          <li>
+            <a href="#" class="resources__link" title="Полка">
+              <img src="images/logo/resources-polka.svg" class="resources__logo" alt="Полка">
+            </a>
+          </li>
+        </ul>
       </section>
     </main>
     <footer class="footer">
@@ -242,6 +254,6 @@
         </div>
       </div>
     </footer>
-  </div>
-</body>
+  </body>
+
 </html>
